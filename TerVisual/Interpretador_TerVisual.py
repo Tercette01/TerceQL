@@ -27,8 +27,13 @@ def main(pagina):
                 #organização das ordens de cor
                 cor = subcomandos[2].split(".")
 
+                print(subcomandos[2].isdigit())
+
                 #para identificar qual comando o segundo comando
-                tipo = type(int(subcomandos[2]))
+                if subcomandos[2].isdigit():
+                    tipo = type(int(subcomandos[2]))
+                else:
+                    tipo = type(subcomandos[2])
 
                 if tipo == int:
                     #forma com tamanho de escrever o texto
