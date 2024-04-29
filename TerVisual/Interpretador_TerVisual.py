@@ -1,35 +1,46 @@
-from flask import Flask, request
+import flet as ft
 
-app = Flask(__name__)
+def main(pagina):
+    codigo_bruto = "escreva: 20; texto: 2, casa alfa, 20"
+    codigo = codigo_bruto.split("; ")
+    for interpretacao in codigo:
+        comando = interpretacao.split(": ")
+        if comando[0] == "escreva":
+            #caso a pessoa queira usar o terminal
+            print(comando[1])
 
-@app.route('/')
-def home():
-    return '''
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>Botão Flask</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                $("button").click(function(){
-                    $.post("/button_press", function(){
-                        alert("Botão pressionado!");
-                    });
-                });
-            });
-        </script>
-    </head>
-    <body>
-        <button type="button">Clique aqui</button>
-    </body>
-    </html>
-    '''
+        elif comando[0] == "texto":
+            #formas da pessoa colocar o texto
 
-@app.route('/button_press', methods=['POST'])
-def button_press():
-    print("Botão pressionado!")
-    return ('', 204)
+            #organização de subcomandos
+            subcomandos = comando[1].split(", ")
+            print(subcomandos)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+            #organização das ordens de cor
+            cor = subcomandos[2].split(".")
+
+            #para identificar qual comando o segundo comando
+            tipo = type(subcomandos[2])
+
+            if int(subcomandos[0]) == 1:
+                #forma padrão de escrever o texto
+                texto = ft.Text(subcomandos[1])
+                pagina.add(texto)
+
+            elif int(subcomandos[0]) == 2:
+                if tipo == int:
+                    #forma com tamanho de escrever o texto
+                    print(subcomandos)
+                    texto = ft.Text(subcomandos[1], size=int(subcomandos[2]))
+                    pagina.add(texto)
+                        
+                elif cor[0] == "cor":
+                        #forma com cor de escrever o texto
+                        texto = ft.Text(subcomandos[1], color = cor[1])
+                        pagina.add(texto)
+
+ft.app(main, view=ft.WEB_BROWSER)
+        
+
+    
+        

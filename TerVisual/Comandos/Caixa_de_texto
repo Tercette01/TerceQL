@@ -1,0 +1,18 @@
+import flet as ft
+
+def main(page: ft.Page):
+    page.add(
+        ft.TextField(label="Padrão"),
+        ft.TextField(label="Desativado", disabled=True, value="Primeiro nome"),
+        ft.TextField(label="Somente leitura", read_only=True, value="Último nome"),
+        ft.TextField(label="Com texto de dica", hint_text="Por favor, insira o texto aqui"),
+        ft.Text("Tamanho 10", size=10),
+        ft.Text("Tamanho 30, Itálico", size=30, color="pink600", italic=True),
+        ft.Text("Tamanho 40, w100", size=40, color=ft.colors.WHITE, bgcolor=ft.colors.BLUE_600, weight=ft.FontWeight.W_100),
+        # Adicione mais estilos de texto conforme necessário
+        # Adicione mais campos de texto conforme necessário  
+    )
+    page.theme = ft.Theme(font_family="Kanit")
+    page.add(ft.Text("Este texto é renderizado com a fonte Kanit"))
+
+ft.app(main)
