@@ -1,7 +1,9 @@
 import flet as ft
 
+
 def main(pagina):
-    codigo_bruto = "escreva: 20; texto: 2, casa alfa, 20"
+    arquivo = open('C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Criações\\TerceQL\\TerVisual\\text.TV', 'r')
+    codigo_bruto = arquivo.read()
     codigo = codigo_bruto.split("; ")
     for interpretacao in codigo:
         comando = interpretacao.split(": ")
@@ -16,18 +18,18 @@ def main(pagina):
             subcomandos = comando[1].split(", ")
             print(subcomandos)
 
-            #organização das ordens de cor
-            cor = subcomandos[2].split(".")
-
-            #para identificar qual comando o segundo comando
-            tipo = type(subcomandos[2])
-
             if int(subcomandos[0]) == 1:
                 #forma padrão de escrever o texto
                 texto = ft.Text(subcomandos[1])
                 pagina.add(texto)
 
             elif int(subcomandos[0]) == 2:
+                #organização das ordens de cor
+                cor = subcomandos[2].split(".")
+
+                #para identificar qual comando o segundo comando
+                tipo = type(int(subcomandos[2]))
+
                 if tipo == int:
                     #forma com tamanho de escrever o texto
                     print(subcomandos)
