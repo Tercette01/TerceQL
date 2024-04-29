@@ -1,16 +1,35 @@
-import tkinter as tk
-from tkinter import messagebox
+from flask import Flask, request
 
-def exibir_mensagem():
-    messagebox.showinfo('Mensagem', 'Você clicou no botão!')
+app = Flask(__name__)
 
-# Cria a janela principal
-root = tk.Tk()
-root.title('Exemplo de Botão')
+@app.route('/')
+def home():
+    return '''
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Botão Flask</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $.post("/button_press", function(){
+                        alert("Botão pressionado!");
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <button type="button">Clique aqui</button>
+    </body>
+    </html>
+    '''
 
-# Cria um botão e o adiciona à janela principal
-botao = tk.Button(root, text='Clique aqui', command=exibir_mensagem)
-botao.pack()
+@app.route('/button_press', methods=['POST'])
+def button_press():
+    print("Botão pressionado!")
+    return ('', 204)
 
-# Inicia o loop principal da interface gráfica
-root.mainloop()
+if __name__ == '__main__':
+    app.run(debug=True)
