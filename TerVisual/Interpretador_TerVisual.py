@@ -7,7 +7,7 @@ def main(pagina):
         linhas = arquivo.readlines()
 
     for linha in linhas:
-        codigo = linha.split("; ")
+        codigo = linha.split(";")
         for interpretacao in codigo:
             comando = interpretacao.split(": ")
             if comando[0] == "escreva":

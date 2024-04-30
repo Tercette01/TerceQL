@@ -1,3 +1,5 @@
 escreva: 20; 
 
-texto: 2, rita, grifar.blue, cor.pink
+texto: 2, rita, cor.pink;
+
+texto: 2, linha, cor.yellow;
