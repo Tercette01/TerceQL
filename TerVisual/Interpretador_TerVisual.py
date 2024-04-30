@@ -1,7 +1,8 @@
 import flet as ft
-
+     
 
 def main(pagina):
+         
     with open('C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Criações\\TerceQL\\TerVisual\\text.TV', 'r') as arquivo:
         linhas = arquivo.readlines()
 
