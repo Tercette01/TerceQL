@@ -19,18 +19,19 @@ Uma linguagem onde uni a visualização do site e com o banco de dados a partir 
   - [ ] Criar subcomandos para o texto, no caso tamanho
 
 ### Regras de sintaxe e comandos do TerVisual:
-- é obrigatorio usar o ponto e virgula no final de cada comando, além disso, quando você for colocar um subcomando com o comando, coloque dois pontos, por exemplo: 
-'''
+- é obrigatorio usar o ponto e virgula no final de cada comando, além disso, quando você for colocar um subcomando com o comando, coloque dois pontos, por exemplo:
+```
 escreva: 20;
-'''
+```
 - para cada subcomando, usamos a virgula, por exemplo:
 
-'''
+```
 texto: 2, o texto está amarelo, cor.yellow
-'''
+```
 
 - Lista de comandos e suas regras
 
 |Comando|Regras|Para que serve|
+|-------|------|---------|
 |escreva|Não exite uma regra para ele, porém sempre se usa os : e ;| serve para testar o terminal e ver se o código está rodando|
 |texto|o seu primeiro subcomando sempre terá que ter um número, para dizer ao sistema quantos subcomandos existem, já o segundo subcomando vai ser obrigatoriamente o texto, sendo os seus comandos até o momento, cor.(palavra cor em inglês) e tamanho (ainda não aceita unidade e somente número)|Serve para colocar o texto da página|
