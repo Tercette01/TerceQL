@@ -7,9 +7,13 @@ Uma linguagem onde uni a visualização do site e com o banco de dados a partir 
 - [X] Criar o comando para texto
   - [X] Criar subcomandos para o texto, no caso cor
   - [x] Criar subcomandos para o texto, no caso tamanho
-  - [ ] Criar subcomandos para o texto, no caso negrito
-  - [ ] Criar subcomandos para o texto, no caso italico
-  - [ ] Criar subcomandos para o texto, no caso cor para italico
+  - [x] (Não foi possível) Criar subcomandos para o texto, no caso negrito
+  - [x] Criar subcomandos para o texto, no caso italico
+  - [x] Criar subcomandos para o texto, no caso para grifar
+  - [x] Misturar três subcomandos
+  - [ ] Misturar quatro subcomandos
+  - [ ] Misturar cinco subcomandos
+     
 - [ ] Criar o comando para inserir texto
   - [ ] Criar subcomandos para o texto, no caso desabilitado
   - [ ] Criar subcomandos para o texto, no caso somente leitura
@@ -35,3 +39,19 @@ texto: 2, o texto está amarelo, cor.yellow
 |-------|------|---------|
 |escreva|Não exite uma regra para ele, porém sempre se usa os : e ;| serve para testar o terminal e ver se o código está rodando|
 |texto|o seu primeiro subcomando sempre terá que ter um número, para dizer ao sistema quantos subcomandos existem, já o segundo subcomando vai ser obrigatoriamente o texto, sendo os seus comandos até o momento, cor.(palavra cor em inglês) e tamanho (ainda não aceita unidade e somente número)|Serve para colocar o texto da página|
+
+
+
+
+# Regras do subcomando **texto**
+1. Sempre usar o número de subcomandos que você vai utlizar no começo
+2. Usar sempre virgula para separar os subcomandos
+3. O ponto e vírgula sempre deve vir no final desse comando
+4. Os sucomandos existentes são:
+    |Nome do subcomando|Para que serve|Código|
+    |----|-----|---------|
+    |tamanho|Serve para dar o tamanho para a letra e é declarado somente com o número|```texto: 2, tamanho, 10;```|
+   |cor|Serve para dar a cor ao texto e é declarado a partir de cor.(cor em inglês)|```texto: 2, cor, cor.yellow;```|
+   |italico|Serve para tranformar um texto em italico e é declarado a partir de italico.verdedairo (para acionar) ou italico.falso (para não acionar)|```texto: 2, italico acionado, italico.verdadeiro;```|
+   |grifar|Serve para grifar um texto e é declarado a partir de grifar.(cor em inglês)|```texto: 2, grifar, grifar.red;```|
+   |font_family|Serve para dar a fonte para o texto e é declarado a partir de familia_font.(nome da fonte)|```texto: 2, font_family, familia_font."Kanit";```|
