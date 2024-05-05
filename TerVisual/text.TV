@@ -1,5 +1,5 @@
 escreva: 20; 
 
-texto: 2, rita, 10;
+texto: 2, teste, 10;
 
-texto: 3, linha, italico.verdadeiro, 2000;
+texto: 3, teste, italico.verdadeiro, 2000;
