@@ -130,30 +130,30 @@ def main(pagina):
                         if cor3[0] == "cor":
                             #forma com cor de escrever o texto
                             print(subcomandos)
-                            texto = ft.Text(subcomandos[1], size=tipo2, color = cor3[1])
+                            texto = ft.Text(subcomandos[1], size=int(subcomandos[2]), color = cor3[1])
                             pagina.add(texto)
 
                         elif italico3[0] == "italico":
                             if italico3[1] == "verdadeiro":
                                 #tranforma o texto em italico
-                                texto = ft.Text(subcomandos[1], size=tipo2, italic=True)
+                                texto = ft.Text(subcomandos[1], size=int(subcomandos[2]), italic=True)
                                 pagina.add(texto)
 
                             elif italico3[2] == "falso":
                                  #não tranforma o texto em italico
-                                 texto = ft.Text(subcomandos[1], size=tipo2, italic=False)
+                                 texto = ft.Text(subcomandos[1], size=int(subcomandos[2]), italic=False)
                                  pagina.add(texto)
                     
                         elif grifar3[0] == "grifar":
                             #forma com grifar de escrever o texto
                             cor_grifar = grifar3[1].upper()
-                            texto = ft.Text(subcomandos[1], size=tipo2, bgcolor=cor_grifar)
+                            texto = ft.Text(subcomandos[1], size=int(subcomandos[2]), bgcolor=cor_grifar)
                             pagina.add(texto)
                     
                         elif familia_fonte3[0] == "familia_fonte":
                             #Fonte do texto
                             pagina.theme = ft.Theme(font_family=familia_fonte3[1])
-                            texto = ft.Text(subcomandos[1], size=tipo2)
+                            texto = ft.Text(subcomandos[1], size=int(subcomandos[2]))
                             pagina.add(texto)
                             
                     elif cor2[0] == "cor":
@@ -161,7 +161,7 @@ def main(pagina):
 
                             if tipo3 == int:
                                 #forma com tamanho de escrever o texto
-                                texto = ft.Text(subcomandos[1], color = cor2[1], size=tipo3)
+                                texto = ft.Text(subcomandos[1], color = cor2[1], size=int(subcomandos[3]))
                                 pagina.add(texto)
                             
                             if italico3[0] == "italico":
@@ -193,7 +193,7 @@ def main(pagina):
 
                                 if tipo3 == int:
                                     #forma com tamanho de escrever o texto
-                                    texto = ft.Text(subcomandos[1], italic=True, size=tipo3)
+                                    texto = ft.Text(subcomandos[1], italic=True, size=int(subcomandos[3]))
                                     pagina.add(texto)
                                 
                                 elif cor3[0] == "cor":
@@ -219,7 +219,7 @@ def main(pagina):
 
                                 if tipo3 == int:
                                     #forma com tamanho de escrever o texto
-                                    texto = ft.Text(subcomandos[1], italic=False, size=tipo3)
+                                    texto = ft.Text(subcomandos[1], italic=False, size=int(subcomandos[3]))
                                     pagina.add(texto)
                                 
                                 elif cor3[0] == "cor":
@@ -246,7 +246,7 @@ def main(pagina):
 
                         if tipo3 == int:
                             #forma com tamanho de escrever o texto
-                            texto = ft.Text(subcomandos[1], bgcolor=cor_grifar, size=tipo3)
+                            texto = ft.Text(subcomandos[1], bgcolor=cor_grifar, size=int(subcomandos[3]))
                             pagina.add(texto)
                         
                         elif cor3[0] == "cor":
@@ -279,7 +279,7 @@ def main(pagina):
                         if tipo3 == int:
                             #forma com tamanho de escrever o texto
                             print(subcomandos)
-                            texto = ft.Text(subcomandos[1], size=tipo3)
+                            texto = ft.Text(subcomandos[1], size=int(subcomandos[3]))
                             pagina.add(texto)
                             
                         elif cor3[0] == "cor":

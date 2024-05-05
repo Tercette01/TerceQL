@@ -1,5 +1,5 @@
 escreva: 20; 
 
-texto: 2, rita, cor.pink;
+texto: 2, rita, 10;
 
-texto: 3, linha, italico.verdadeiro, grifar.yellow;
+texto: 3, linha, italico.verdadeiro, 2000;
