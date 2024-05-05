@@ -2,4 +2,4 @@ escreva: 20;
 
 texto: 2, rita, cor.pink;
 
-texto: 2, linha, cor.yellow;
+texto: 3, linha, italico.verdadeiro, grifar.yellow;
