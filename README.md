@@ -38,7 +38,7 @@ texto: 2, o texto está amarelo, cor.yellow
 |Comando|Regras|Para que serve|
 |-------|------|---------|
 |escreva|Não exite uma regra para ele, porém sempre se usa os : e ;| serve para testar o terminal e ver se o código está rodando|
-|texto|o seu primeiro subcomando sempre terá que ter um número, para dizer ao sistema quantos subcomandos existem, já o segundo subcomando vai ser obrigatoriamente o texto, sendo os seus comandos até o momento, cor.(palavra cor em inglês) e tamanho (ainda não aceita unidade e somente número)|Serve para colocar o texto da página|
+|texto|o seu primeiro subcomando sempre terá que ter um número, para dizer ao sistema quantos subcomandos existem, já o segundo subcomando vai ser obrigatoriamente o texto, para saber mais, de uma olhada em *regras do subcomando texto*|Serve para colocar o texto da página|
 
 
 
