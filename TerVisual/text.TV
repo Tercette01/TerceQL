@@ -2,4 +2,6 @@ escreva: 20;
 
 texto: 2, teste, 10;
 
-texto: 3, teste, italico.verdadeiro, 2000;
+texto: 3, teste, italico.verdadeiro, 20;
+
+texto: 4, teste, italico.verdadeiro, cor.yellow, 3;
