@@ -1459,5 +1459,342 @@ def main(pagina):
                                             texto = ft.Text(subcomandos[1], size=int(subcomandos[2]), bgcolor=cor_grifar, italic=False)
                                             pagina.add(texto)
 
+                    elif cor2[0] == "cor":
+                        #forma com cor de escrever o texto
+
+                        if tipo3 == int:
+                            #forma com tamanho de escrever o texto
+
+                            if italico4[0] == "italico":
+                                if italico4[1] == "verdadeiro":
+                                    #tranforma o texto em italico
+
+                                    if grifar5[0] == "grifar":
+                                        #forma com grifar de escrever o texto
+                                        cor_grifar = grifar5[1].upper()
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], size=int(subcomandos[3], italic=True, bgcolor=cor_grifar))
+                                        pagina.add(texto)
+
+                                    elif familia_fonte5[0] == "familia_fonte":
+                                        #Fonte do texto
+                                        pagina.theme = ft.Theme(font_family=familia_fonte5[1])
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], size=int(subcomandos[3]), italic=True)
+                                        pagina.add(texto)
+
+                                elif italico4[1] == "falso":
+                                    #não tranforma o texto em italico
+
+                                    if grifar5[0] == "grifar":
+                                        #forma com grifar de escrever o texto
+                                        cor_grifar = grifar5[1].upper()
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], size=int(subcomandos[3], italic=False, bgcolor=cor_grifar))
+                                        pagina.add(texto)
+
+                                    elif familia_fonte5[0] == "familia_fonte":
+                                        #Fonte do texto
+                                        pagina.theme = ft.Theme(font_family=familia_fonte5[1])
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], size=int(subcomandos[3]), italic=False)
+                                        pagina.add(texto)
+
+
+                            elif grifar4[0] == "grifar":
+                                #forma com grifar de escrever o texto
+                                cor_grifar = grifar4[1].upper()
+
+                                if italico5[0] == "italico":
+                                    if italico5[1] == "verdadeiro":
+                                        #tranforma o texto em italico
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], size=int(subcomandos[3]), bgcolor=cor_grifar, italic=True)
+                                        pagina.add(texto)
+
+                                    elif italico5[1] == "falso":
+                                        #não tranforma o texto em italico
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], size=int(subcomandos[3]), bgcolor=cor_grifar, italic=False)
+                                        pagina.add(texto)
+                                
+                                elif familia_fonte5[0] == "familia_fonte":
+                                    #Fonte do texto
+                                    pagina.theme = ft.Theme(font_family=familia_fonte5[1])
+                                    texto = ft.Text(subcomandos[1], color = cor2[1], size=int(subcomandos[3]), bgcolor=cor_grifar)
+                                    pagina.add(texto)
+                    
+                            elif familia_fonte4[0] == "familia_fonte":
+                                #Fonte do texto
+                                pagina.theme = ft.Theme(font_family=familia_fonte4[1])
+
+                                if italico5[0] == "italico":
+                                    if italico5[1] == "verdadeiro":
+                                        #tranforma o texto em italico
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], size=int(subcomandos[3]), italic=True)
+                                        pagina.add(texto)
+
+                                    elif italico5[1] == "falso":
+                                        #não tranforma o texto em italico
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], size=int(subcomandos[3]), italic=False)
+                                        pagina.add(texto)
+                                
+                                elif grifar5[0] == "grifar":
+                                    #forma com grifar de escrever o texto
+                                    cor_grifar = grifar5[1].upper()
+                                    texto = ft.Text(subcomandos[1], color = cor2[1], size=int(subcomandos[3], bgcolor=cor_grifar))
+                                    pagina.add(texto)
+                                
+
+                        if italico3[0] == "italico":
+                            if italico3[1] == "verdadeiro":
+                                #tranforma o texto em italico
+
+                                if tipo4 == int:
+                                    #forma com tamanho de escrever o texto
+
+                                    if grifar5[0] == "grifar":
+                                        #forma com grifar de escrever o texto
+                                        cor_grifar = grifar5[1].upper()
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], italic=True, size=int(subcomandos[4], bgcolor=cor_grifar))
+                                        pagina.add(texto)
+                                    
+                                    elif familia_fonte5[0] == "familia_fonte":
+                                        #Fonte do texto
+                                        pagina.theme = ft.Theme(font_family=familia_fonte5[1])
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], italic=True, size=int(subcomandos[4]))
+                                        pagina.add(texto)   
+                    
+                                elif grifar4[0] == "grifar":
+                                    #forma com grifar de escrever o texto
+                                    cor_grifar = grifar4[1].upper()
+
+                                    if tipo5 == int:
+                                        #forma com tamanho de escrever o texto
+                                        print(subcomandos)
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], italic=True, bgcolor=cor_grifar, size=int(subcomandos[5]))
+                                        pagina.add(texto)
+                                    
+                                    elif familia_fonte5[0] == "familia_fonte":
+                                        #Fonte do texto
+                                        pagina.theme = ft.Theme(font_family=familia_fonte5[1])
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], italic=True, bgcolor=cor_grifar)
+                                        pagina.add(texto)  
+                    
+                                elif familia_fonte4[0] == "familia_fonte":
+                                    #Fonte do texto
+                                    pagina.theme = ft.Theme(font_family=familia_fonte4[1])
+
+                                    if tipo5 == int:
+                                        #forma com tamanho de escrever o texto
+                                        print(subcomandos)
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], italic=True, size=int(subcomandos[5]))
+                                        pagina.add(texto)
+                                    
+                                    elif grifar5[0] == "grifar":
+                                        #forma com grifar de escrever o texto
+                                        cor_grifar = grifar5[1].upper()
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], italic=True, bgcolor=cor_grifar)
+                                        pagina.add(texto)
+
+                            elif italico3[1] == "falso":
+                                #não tranforma o texto em italico
+
+                                if tipo4 == int:
+                                    #forma com tamanho de escrever o texto
+
+                                    if grifar5[0] == "grifar":
+                                        #forma com grifar de escrever o texto
+                                        cor_grifar = grifar5[1].upper()
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], italic=False, size=int(subcomandos[4], bgcolor=cor_grifar))
+                                        pagina.add(texto)
+                                    
+                                    elif familia_fonte5[0] == "familia_fonte":
+                                        #Fonte do texto
+                                        pagina.theme = ft.Theme(font_family=familia_fonte5[1])
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], italic=False, size=int(subcomandos[4]))
+                                        pagina.add(texto)   
+                    
+                                elif grifar4[0] == "grifar":
+                                    #forma com grifar de escrever o texto
+                                    cor_grifar = grifar4[1].upper()
+
+                                    if tipo5 == int:
+                                        #forma com tamanho de escrever o texto
+                                        print(subcomandos)
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], italic=False, bgcolor=cor_grifar, size=int(subcomandos[5]))
+                                        pagina.add(texto)
+                                    
+                                    elif familia_fonte5[0] == "familia_fonte":
+                                        #Fonte do texto
+                                        pagina.theme = ft.Theme(font_family=familia_fonte5[1])
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], italic=False, bgcolor=cor_grifar)
+                                        pagina.add(texto)  
+                    
+                                elif familia_fonte4[0] == "familia_fonte":
+                                    #Fonte do texto
+                                    pagina.theme = ft.Theme(font_family=familia_fonte4[1])
+
+                                    if tipo5 == int:
+                                        #forma com tamanho de escrever o texto
+                                        print(subcomandos)
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], italic=False, size=int(subcomandos[5]))
+                                        pagina.add(texto)
+                                    
+                                    elif grifar5[0] == "grifar":
+                                        #forma com grifar de escrever o texto
+                                        cor_grifar = grifar5[1].upper()
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], italic=False, bgcolor=cor_grifar)
+                                        pagina.add(texto)
+                    
+                        elif grifar3[0] == "grifar":
+                            #forma com grifar de escrever o texto
+                            cor_grifar = grifar3[1].upper()
+
+                            if tipo4 == int:
+                                #forma com tamanho de escrever o texto
+
+                                if italico5[0] == "italico":
+                                    if italico5[1] == "verdadeiro":
+                                        #tranforma o texto em italico
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], bgcolor=cor_grifar, size=int(subcomandos[4]), italic=True)
+                                        pagina.add(texto)
+
+                                    elif italico5[1] == "falso":
+                                        #não tranforma o texto em italico
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], bgcolor=cor_grifar, size=int(subcomandos[4]), italic=False)
+                                        pagina.add(texto)
+
+                                elif familia_fonte5[0] == "familia_fonte":
+                                    #Fonte do texto
+                                    pagina.theme = ft.Theme(font_family=familia_fonte5[1])
+                                    texto = ft.Text(subcomandos[1], color = cor2[1], bgcolor=cor_grifar, size=int(subcomandos[4]))
+                                    pagina.add(texto)
+                            
+                            elif italico4[0] == "italico":
+                                if italico4[1] == "verdadeiro":
+                                    #tranforma o texto em italico
+
+                                    if tipo5 == int:
+                                        #forma com tamanho de escrever o texto
+                                        print(subcomandos)
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], bgcolor=cor_grifar, italic=True, size=int(subcomandos[5]))
+                                        pagina.add(texto)
+                                    
+                                    elif familia_fonte5[0] == "familia_fonte":
+                                        #Fonte do texto
+                                        pagina.theme = ft.Theme(font_family=familia_fonte5[1])
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], bgcolor=cor_grifar, italic=True)
+                                        pagina.add(texto)
+
+                                elif italico4[1] == "falso":
+                                    #não tranforma o texto em italico
+
+                                    if tipo5 == int:
+                                        #forma com tamanho de escrever o texto
+                                        print(subcomandos)
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], bgcolor=cor_grifar, italic=False, size=int(subcomandos[5]))
+                                        pagina.add(texto)
+                                    
+                                    elif familia_fonte5[0] == "familia_fonte":
+                                        #Fonte do texto
+                                        pagina.theme = ft.Theme(font_family=familia_fonte5[1])
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], bgcolor=cor_grifar, italic=False)
+                                        pagina.add(texto)
+                    
+                            elif familia_fonte4[0] == "familia_fonte":
+                                #Fonte do texto
+                                pagina.theme = ft.Theme(font_family=familia_fonte4[1])
+
+                                if tipo5 == int:
+                                    #forma com tamanho de escrever o texto
+                                    print(subcomandos)
+                                    texto = ft.Text(subcomandos[1], color = cor2[1], bgcolor=cor_grifar, size=int(subcomandos[5]))
+                                    pagina.add(texto)
+
+                                elif italico5[0] == "italico":
+                                    if italico5[1] == "verdadeiro":
+                                        #tranforma o texto em italico
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], bgcolor=cor_grifar, italic=True)
+                                        pagina.add(texto)
+
+                                    elif italico5[1] == "falso":
+                                        #não tranforma o texto em italico
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], bgcolor=cor_grifar, italic=False)
+                                        pagina.add(texto)
+                    
+                        elif familia_fonte3[0] == "familia_fonte":
+                            #Fonte do texto
+                            pagina.theme = ft.Theme(font_family=familia_fonte3[1])
+
+                            if tipo4 == int:
+                                #forma com tamanho de escrever o texto
+
+                                if italico5[0] == "italico":
+                                    if italico5[1] == "verdadeiro":
+                                        #tranforma o texto em italico
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], italic=True, size=int(subcomandos[4]))
+                                        pagina.add(texto)
+
+                                    elif italico5[2] == "falso":
+                                        #não tranforma o texto em italico
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], italic=False, size=int(subcomandos[4]))
+                                        pagina.add(texto)
+                            
+                                elif grifar5[0] == "grifar":
+                                    #forma com grifar de escrever o texto
+                                    cor_grifar = grifar5[1].upper()
+                                    texto = ft.Text(subcomandos[1], color = cor2[1], bgcolor=cor_grifar, size=int(subcomandos[4]))
+                                    pagina.add(texto)
+
+                            
+                            if italico4[0] == "italico":
+                                if italico4[1] == "verdadeiro":
+                                    #tranforma o texto em italico
+
+                                    if tipo5 == int:
+                                        #forma com tamanho de escrever o texto
+                                        print(subcomandos)
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], italic=True, size=int(subcomandos[5]))
+                                        pagina.add(texto)
+                                    
+                                    elif grifar5[0] == "grifar":
+                                        #forma com grifar de escrever o texto
+                                        cor_grifar = grifar5[1].upper()
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], italic=True, bgcolor=cor_grifar)
+                                        pagina.add(texto)
+
+                                elif italico4[2] == "falso":
+                                    #não tranforma o texto em italico
+
+                                    if tipo5 == int:
+                                        #forma com tamanho de escrever o texto
+                                        print(subcomandos)
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], italic=False, size=int(subcomandos[5]))
+                                        pagina.add(texto)
+                                    
+                                    elif grifar5[0] == "grifar":
+                                        #forma com grifar de escrever o texto
+                                        cor_grifar = grifar5[1].upper()
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], italic=False, bgcolor=cor_grifar)
+                                        pagina.add(texto)
+                            
+                            elif grifar4[0] == "grifar":
+                                #forma com grifar de escrever o texto
+                                cor_grifar = grifar4[1].upper()
+                                texto = ft.Text(subcomandos[1], color = cor2[1], bgcolor=cor_grifar)
+                                pagina.add(texto)
+
+                                if italico5[0] == "italico":
+                                    if italico5[1] == "verdadeiro":
+                                        #tranforma o texto em italico
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], italic=True, bgcolor=cor_grifar)
+                                        pagina.add(texto)
+
+                                    elif italico5[2] == "falso":
+                                        #não tranforma o texto em italico
+                                        texto = ft.Text(subcomandos[1], color = cor2[1], italic=False, bgcolor=cor_grifar)
+                                        pagina.add(texto)
+                                
+                                elif tipo5 == int:
+                                    #forma com tamanho de escrever o texto
+                                    print(subcomandos)
+                                    texto = ft.Text(subcomandos[1], color = cor2[1], bgcolor=cor_grifar, size=int(subcomandos[5]))
+                                    pagina.add(texto)
+
 
 ft.app(main, view=ft.WEB_BROWSER)

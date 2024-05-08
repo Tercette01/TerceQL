@@ -14,7 +14,7 @@ Uma linguagem onde uni a visualização do site e com o banco de dados a partir 
   - [x] Misturar quatro subcomandos
   - [ ] Misturar cinco subcomandos
     - [x] Fazer comando de tamanho misturado com outros comandos
-    - [ ] Fazer comando de cor misturado com outros comandos
+    - [x] Fazer comando de cor misturado com outros comandos
     - [ ] Fazer comando de itálico misturado com outros comandos
     - [ ] Fazer comando de font_family misturado com outros comandos
   - [ ] Misturar seis subcomandos
