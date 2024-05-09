@@ -12,11 +12,7 @@ Uma linguagem onde uni a visualização do site e com o banco de dados a partir 
   - [x] Criar subcomandos para o texto, no caso para grifar
   - [x] Misturar três subcomandos
   - [x] Misturar quatro subcomandos
-  - [ ] Misturar cinco subcomandos
-    - [x] Fazer comando de tamanho misturado com outros comandos
-    - [x] Fazer comando de cor misturado com outros comandos
-    - [ ] Fazer comando de itálico misturado com outros comandos
-    - [ ] Fazer comando de font_family misturado com outros comandos
+  - [x] Misturar cinco subcomandos
   - [ ] Misturar seis subcomandos
      
 - [ ] Criar o comando para inserir texto

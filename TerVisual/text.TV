@@ -5,3 +5,5 @@ texto: 2, teste, 10;
 texto: 3, teste, italico.verdadeiro, 20;
 
 texto: 4, teste, italico.verdadeiro, grifar.yellow, cor.blue;
+
+texto: 5, teste, 30, italico.verdadeiro, grifar.yellow, cor.blue;
