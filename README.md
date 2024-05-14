@@ -44,7 +44,7 @@ texto: 2, o texto está amarelo, cor.yellow
 
 
 
-# Regras do subcomando **texto**
+# Regras do comando **texto**
 1. Sempre usar o número de subcomandos que você vai utlizar no começo (também conta a parte do texto)
 2. Usar sempre virgula para separar os subcomandos
 3. O ponto e vírgula sempre deve vir no final desse comando
