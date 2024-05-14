@@ -13,7 +13,7 @@ Uma linguagem onde uni a visualização do site e com o banco de dados a partir 
   - [x] Misturar três subcomandos
   - [x] Misturar quatro subcomandos
   - [x] Misturar cinco subcomandos
-  - [ ] Misturar seis subcomandos
+  - [X] Misturar seis subcomandos
      
 - [ ] Criar o comando para inserir texto
   - [ ] Criar subcomandos para o texto, no caso desabilitado
@@ -45,7 +45,7 @@ texto: 2, o texto está amarelo, cor.yellow
 
 
 # Regras do subcomando **texto**
-1. Sempre usar o número de subcomandos que você vai utlizar no começo
+1. Sempre usar o número de subcomandos que você vai utlizar no começo (também conta a parte do texto)
 2. Usar sempre virgula para separar os subcomandos
 3. O ponto e vírgula sempre deve vir no final desse comando
 4. Os sucomandos existentes são:
