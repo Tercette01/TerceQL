@@ -30,6 +30,7 @@ def interpretador():
             codigo = linha.split(";")
             for interpretacao in codigo:
                 comando = interpretacao.split(": ")
+                print(comando)
                 
                 if comando[0] == "escreva":
                     #caso a pessoa queira usar o terminal
@@ -4753,7 +4754,11 @@ def interpretador():
                                                 #forma com tamanho de escrever o texto
                                                 texto = ft.Text(subcomandos[1], bgcolor=cor_grifar, italic=False, color = cor5[1], size=int(subcomandos[6]))
                                                 pagina.add(texto)
-            
+
+                elif comando[0] == "titulo":
+                    #Esse comando faz alterar o titulo
+                    subcomando = comando[1]
+                    pagina.title = subcomando
     
     mdelo = modelo()
     print(mdelo)    

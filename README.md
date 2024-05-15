@@ -67,3 +67,10 @@ texto: 2, o texto está amarelo, cor.yellow
     |----|-----|---------|
     |app|Serve para que o interpretador entenda que o código vai ser usado para criar um aplicativo|```modelo: app;```|
    |site|Serve para que o interpretador entenda que o código vai ser usado para criar um site|```modelo: site;```|
+
+# Regras do comando **titulo**
+1. Esse comando não tem outros subcomandos, mas mesmo assim, devesse colocar dois pontos no final
+2. O comando é usado para renomear a página web e o aplicativo
+3. Como ainda é recente, tem problemas com acentos, então pedimos uma contribuição ou que não use acentuação
+4. O comando deve ser usado desse jeito:
+  ```titulo: Casa;```

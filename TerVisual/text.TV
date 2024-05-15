@@ -1,4 +1,6 @@
-modelo:app;
+modelo: site;
+
+titulo: São Paulo;
 
 escreva: 20; 
 
