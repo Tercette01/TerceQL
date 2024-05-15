@@ -14,6 +14,8 @@ Uma linguagem onde uni a visualização do site e com o banco de dados a partir 
   - [x] Misturar quatro subcomandos
   - [x] Misturar cinco subcomandos
   - [X] Misturar seis subcomandos
+
+- [x] Criar um comando que mude de página da web para aplicativo
      
 - [ ] Criar o comando para inserir texto
   - [ ] Criar subcomandos para o texto, no caso desabilitado
@@ -56,3 +58,12 @@ texto: 2, o texto está amarelo, cor.yellow
    |italico|Serve para tranformar um texto em italico e é declarado a partir de italico.verdedairo (para acionar) ou italico.falso (para não acionar)|```texto: 2, italico acionado, italico.verdadeiro;```|
    |grifar|Serve para grifar um texto e é declarado a partir de grifar.(cor em inglês)|```texto: 2, grifar, grifar.red;```|
    |font_family|Serve para dar a fonte para o texto e é declarado a partir de familia_font.(nome da fonte)|```texto: 2, font_family, familia_font."Kanit";```|
+  
+# Regras do comando **modelo**
+1. Como os outros comandos, deve sempre usar dois pontos e colocar o subcomandos, além do ponto e virgula no final
+2. Esse subcomando só vai ter dois comandos, o app e site, porém é de extrema importancia colocar espaço entre os dois pontos e o subcomando
+3. Os sucomandos e suas habilidades são:
+    |Nome do subcomando|Para que serve|Código|
+    |----|-----|---------|
+    |app|Serve para que o interpretador entenda que o código vai ser usado para criar um aplicativo|```modelo: app;```|
+   |site|Serve para que o interpretador entenda que o código vai ser usado para criar um site|```modelo: site;```|
